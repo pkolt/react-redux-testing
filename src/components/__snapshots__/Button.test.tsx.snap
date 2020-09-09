@@ -1,3 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Button /> renders without crashing 1`] = `ShallowWrapper {}`;
+exports[`<Button /> renders without crashing 1`] = `
+<button
+  className="btn "
+  type="submit"
+/>
+`;

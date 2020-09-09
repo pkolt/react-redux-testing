@@ -9,13 +9,14 @@ const rootReducer = combineReducers({
 export type AppState = ReturnType<typeof rootReducer>;
 export type AppDispatch = ThunkDispatch<AppState, null, Action<string>>;
 
-const createStore = (): Store<AppState> => {
+const createStore = (initialState?: AppState): Store<AppState> => {
   const isDevMode = process.env.NODE_ENV === 'development';
   const logger = createLogger();
   const middlewares = [...getDefaultMiddleware(), ...(isDevMode ? [logger] : [])];
   const store = configureStore({
     reducer: rootReducer,
     middleware: middlewares,
+    preloadedState: initialState,
   });
   return store;
 };

@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SignIn /> renders without crashing 1`] = `
+<SignIn>
+  <div
+    className="bg-light d-flex h-100 align-items-center justify-content-center"
+  >
+    <div
+      className="card w-25"
+    >
+      <h4
+        className="card-header text-center"
+      >
+        Авторизация
+      </h4>
+      <div
+        className="card-body"
+      >
+        <SignInForm
+          onSubmit={[Function]}
+        >
+          <form
+            onSubmit={[Function]}
+          >
+            <div
+              className="form-group"
+            >
+              <label
+                htmlFor="login"
+              >
+                Пользователь
+              </label>
+              <input
+                className="form-control"
+                id="login"
+                name="login"
+                onChange={[Function]}
+                type="text"
+              />
+            </div>
+            <div
+              className="form-group"
+            >
+              <label
+                htmlFor="password"
+              >
+                Пароль
+              </label>
+              <input
+                className="form-control"
+                id="password"
+                name="password"
+                onChange={[Function]}
+                type="password"
+              />
+            </div>
+            <div
+              className="d-flex justify-content-center"
+            >
+              <Button
+                modifier="btn-primary"
+              >
+                <button
+                  className="btn btn-primary"
+                  type="submit"
+                >
+                  Войти
+                </button>
+              </Button>
+            </div>
+          </form>
+        </SignInForm>
+      </div>
+    </div>
+  </div>
+</SignIn>
+`;
