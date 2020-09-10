@@ -24,13 +24,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "coverage": "npm test -- --coverage --watchAll"
+    "eject": "react-scripts eject"
   },
   "jest": {
     "coverageReporters": [
-      "text",
-      "html"
+      "text"
     ],
     "collectCoverageFrom": [
       "src/**/*.{ts,tsx}",
@@ -64,6 +62,8 @@
     "@types/redux-logger": "^3.0.8",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.4",
+    "jest-enzyme": "^7.1.2",
+    "react-test-renderer": "^16.13.1",
     "redux-logger": "^3.0.6"
   }
 }
